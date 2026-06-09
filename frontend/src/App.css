@@ -1,0 +1,27 @@
+/* App-level overrides. Keep clean (no centered text, no dark default). */
+.App {
+    min-height: 100vh;
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+}
+
+/* Decorative gold radial accent for hero */
+.hero-accent {
+    background:
+        radial-gradient(circle at 90% 20%, rgba(176, 141, 42, 0.10) 0%, rgba(176, 141, 42, 0) 50%),
+        radial-gradient(circle at 10% 80%, rgba(11, 29, 58, 0.05) 0%, rgba(11, 29, 58, 0) 50%);
+}
+
+/* Subtle hover for cards */
+.card-hover {
+    transition: box-shadow 200ms ease, transform 200ms ease;
+}
+.card-hover:hover {
+    box-shadow: 0 4px 14px rgba(15, 23, 42, 0.08);
+}
+
+/* Compact data table */
+.fz-table th,
+.fz-table td {
+    font-size: 0.875rem;
+}

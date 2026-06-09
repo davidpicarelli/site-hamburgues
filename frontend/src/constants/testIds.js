@@ -1,0 +1,68 @@
+export const HOME = {
+  emergentLink: "emergent-link",
+};
+
+export const T = {
+  hero: {
+    startBtn: "hero-start-button",
+  },
+  header: {
+    newAnalysis: "header-new-analysis-button",
+    help: "header-help-button",
+  },
+  wizard: {
+    back: "wizard-back-button",
+    next: "wizard-next-button",
+    calculate: "wizard-calculate-button",
+    validationAlert: "wizard-validation-alert",
+    stepBadge: (n) => `wizard-step-${n}-badge`,
+  },
+  contract: {
+    principal: "contract-principal-input",
+    startDate: "contract-start-date-input",
+    firstDueDate: "contract-first-due-date-input",
+    term: "contract-term-input",
+    rateMonthly: "contract-rate-monthly-input",
+    rateAnnual: "contract-rate-annual-input",
+    rateMode: "contract-rate-mode-select",
+    system: "contract-system-select",
+    iof: "contract-iof-input",
+    fees: "contract-fees-input",
+    insurance: "contract-insurance-input",
+    contractedInstallment: "contract-installment-input",
+    dayCount: "contract-daycount-select",
+  },
+  payments: {
+    addBtn: "payments-add-button",
+    editBtn: (i) => `payments-edit-button-${i}`,
+    deleteBtn: (i) => `payments-delete-button-${i}`,
+    dateInput: "payment-date-input",
+    amountInput: "payment-amount-input",
+    noteInput: "payment-note-textarea",
+    saveBtn: "payment-save-button",
+    autoFillBtn: "payments-autofill-button",
+    clearBtn: "payments-clear-button",
+  },
+  bacen: {
+    modeAuto: "bacen-mode-auto",
+    modeManual: "bacen-mode-manual",
+    seriesSelect: "bacen-series-select",
+    fetchBtn: "bacen-fetch-button",
+    manualRate: "bacen-manual-rate-input",
+    startDate: "bacen-start-date-input",
+    endDate: "bacen-end-date-input",
+    status: "bacen-fetch-status",
+  },
+  results: {
+    kpiPrice: "kpi-total-interest-price",
+    kpiHamb: "kpi-total-interest-hamburgues",
+    kpiOvercharge: "kpi-overcharge",
+    kpiRateBacen: "kpi-rate-vs-bacen",
+    anatocism: "anatocism-indicator",
+    table: (m) => `amortization-table-${m}`,
+    chart: "balance-comparison-chart",
+    assumptions: "assumptions-panel",
+    downloadExcel: "download-excel-button",
+    downloadPdf: "download-pdf-button",
+  },
+};

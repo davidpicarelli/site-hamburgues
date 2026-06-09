@@ -1,0 +1,34 @@
+[
+  {
+    "content": "Phase 1: POC done (all calculations + BACEN + Excel + PDF validated)",
+    "status": "completed"
+  },
+  {
+    "content": "Phase 2: Call design_agent for forensic/legal UI guidelines",
+    "status": "completed"
+  },
+  {
+    "content": "Phase 2: Install frontend deps (recharts)",
+    "status": "completed"
+  },
+  {
+    "content": "Phase 2: Build backend (server.py, calculations.py, bacen.py, excel_generator.py, pdf_generator.py, models.py)",
+    "status": "completed"
+  },
+  {
+    "content": "Phase 2: Build frontend (Calculator, ContractForm, PaymentsEditor, BacenSelector, ResultsView, AmortizationTable, ChartsView)",
+    "status": "completed"
+  },
+  {
+    "content": "Phase 2: All user stories covered in Development",
+    "status": "completed"
+  },
+  {
+    "content": "Phase 2: End to End Testing using testing_agent_v3",
+    "status": "in_progress"
+  },
+  {
+    "content": "Phase 2: Fix all bugs reported by testing agent",
+    "status": "pending"
+  }
+]

@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Spectral:wght@400;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --font-sans: 'IBM Plex Sans', ui-sans-serif, system-ui, -apple-system, sans-serif;
+    --font-serif: 'Spectral', ui-serif, Georgia, serif;
+    --font-mono: 'IBM Plex Mono', ui-monospace, SFMono-Regular, monospace;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: var(--font-mono);
+}
+
+.tabular-nums {
+    font-variant-numeric: tabular-nums;
+    font-feature-settings: 'tnum' 1, 'lnum' 1;
+}
+
+.font-serif-display {
+    font-family: var(--font-serif);
+    letter-spacing: -0.01em;
+}
+
+@layer base {
+    :root {
+        --background: 40 20% 96%;
+        --foreground: 222 47% 11%;
+        --card: 0 0% 100%;
+        --card-foreground: 222 47% 11%;
+        --popover: 0 0% 100%;
+        --popover-foreground: 222 47% 11%;
+        --primary: 215 67% 14%;
+        --primary-foreground: 0 0% 98%;
+        --secondary: 220 20% 95%;
+        --secondary-foreground: 215 67% 14%;
+        --muted: 220 18% 94%;
+        --muted-foreground: 215 16% 35%;
+        --accent: 43 55% 86%;
+        --accent-foreground: 215 67% 14%;
+        --destructive: 4 74% 42%;
+        --destructive-foreground: 0 0% 98%;
+        --border: 215 22% 86%;
+        --input: 215 22% 86%;
+        --ring: 221 83% 53%;
+        --radius: 0.75rem;
+        --chart-1: 215 67% 14%;
+        --chart-2: 173 58% 32%;
+        --chart-3: 36 60% 42%;
+        --chart-4: 43 74% 52%;
+        --chart-5: 4 74% 42%;
+    }
+    .dark {
+        --background: 222 47% 8%;
+        --foreground: 0 0% 98%;
+        --card: 222 40% 11%;
+        --card-foreground: 0 0% 98%;
+        --popover: 222 40% 11%;
+        --popover-foreground: 0 0% 98%;
+        --primary: 43 55% 70%;
+        --primary-foreground: 215 67% 14%;
+        --secondary: 222 25% 18%;
+        --secondary-foreground: 0 0% 98%;
+        --muted: 222 25% 16%;
+        --muted-foreground: 215 16% 65%;
+        --accent: 43 30% 28%;
+        --accent-foreground: 0 0% 98%;
+        --destructive: 4 74% 50%;
+        --destructive-foreground: 0 0% 98%;
+        --border: 215 22% 22%;
+        --input: 215 22% 22%;
+        --ring: 43 55% 70%;
+    }
+}
+
+@layer base {
+    * {
+        @apply border-border;
+    }
+    body {
+        @apply bg-background text-foreground;
+    }
+}
+
+@layer base {
+    [data-debug-wrapper="true"] {
+        display: contents !important;
+    }
+
+    [data-debug-wrapper="true"] > * {
+        margin-left: inherit;
+        margin-right: inherit;
+        margin-top: inherit;
+        margin-bottom: inherit;
+        padding-left: inherit;
+        padding-right: inherit;
+        padding-top: inherit;
+        padding-bottom: inherit;
+        column-gap: inherit;
+        row-gap: inherit;
+        gap: inherit;
+        border-left-width: inherit;
+        border-right-width: inherit;
+        border-top-width: inherit;
+        border-bottom-width: inherit;
+        border-left-style: inherit;
+        border-right-style: inherit;
+        border-top-style: inherit;
+        border-bottom-style: inherit;
+        border-left-color: inherit;
+        border-right-color: inherit;
+        border-top-color: inherit;
+        border-bottom-color: inherit;
+    }
+}

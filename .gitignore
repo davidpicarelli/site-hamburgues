@@ -15,6 +15,9 @@ node_modules/
 !.yarn/plugins
 !.yarn/releases
 !.yarn/versions
+.venv*/
+**/.venv*/
+backend/.venv312/
 
 # Testing
 /coverage
@@ -48,9 +51,21 @@ dump.rdb
 
 # Python
 __pycache__/
-*pyc*
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
 venv/
 .venv/
+.venv*/
+ENV/
+env/
+.env
+.env.local
+*.egg
 
 # Development tools
 chainlit.md
